@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Sentiment Analyzer</title>
+    <style>
+        body { font-family: Arial, sans-serif; background: #f0f2f5; text-align: center; padding: 50px; }
+        input[type="text"] { width: 300px; padding: 10px; }
+        button { padding: 10px 20px; background: #4CAF50; color: white; border: none; cursor: pointer; }
+        .result { margin-top: 20px; font-size: 20px; }
+    </style>
+</head>
+<body>
+    <h1>Sentiment Analysis Web App</h1>
+    <form action="/predict" method="post">
+        <input type="text" name="user_input" placeholder="Enter your sentence..." required>
+        <button type="submit">Analyze</button>
+    </form>
+    
+    {% if prediction %}
+        <div class="result">
+            <!-- <p><strong>Input:</strong> {{ input_text }}</p> -->
+            <p><strong>Predicted Sentiment:</strong> {{ prediction }}</p>
+        </div>
+    {% endif %}
+</body>
+</html>
