@@ -6,8 +6,8 @@ import os
 sys.path.append(os.path.abspath(".."))
 from text_cleaner import clean_text 
 # Load model and label encoder
-pipeline = joblib.load("../model/sentiment_pipeline_model.joblib")
-label_encoder = joblib.load("../model/label_encoder.joblib")
+pipeline = joblib.load("model/sentiment_pipeline_model.joblib")
+label_encoder = joblib.load("model/label_encoder.joblib")
 
 # Streamlit Dashboard
 st.set_page_config(page_title="Sentiment Analyzer", layout="centered")
