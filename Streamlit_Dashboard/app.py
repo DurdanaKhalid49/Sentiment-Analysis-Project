@@ -3,8 +3,8 @@ import joblib
 import pandas as pd
 from text_cleaner import clean_text 
 # Load model and label encoder
-pipeline = joblib.load("model/sentiment_pipeline_model.joblib")
-label_encoder = joblib.load("model/label_encoder.joblib")
+pipeline = joblib.load("Streamlit_Dashboard/model/sentiment_pipeline_model.joblib")
+label_encoder = joblib.load("Streamlit_Dashboard/model/label_encoder.joblib")
 
 # Streamlit Dashboard
 st.set_page_config(page_title="Sentiment Analyzer", layout="centered")
