@@ -1,9 +1,6 @@
 import streamlit as st
 import joblib
 import pandas as pd
-import sys
-import os
-sys.path.append(os.path.abspath(".."))
 from text_cleaner import clean_text 
 # Load model and label encoder
 pipeline = joblib.load("model/sentiment_pipeline_model.joblib")
